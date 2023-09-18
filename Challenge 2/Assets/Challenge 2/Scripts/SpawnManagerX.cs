@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+     * Darion Jeffries
+     * SpawnManagerX
+     * Challenge2
+     * Spawns ball at random intervals after set amount of time.
+     */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -16,17 +22,32 @@ public class SpawnManagerX : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("SpawnRandomBall", startDelay, spawnInterval);
+        StartCoroutine(SpawnRandomPrefabWithCoroutine());
     }
 
-    // Spawn random ball at random x position at top of play area
-    void SpawnRandomBall ()
+    IEnumerator SpawnRandomPrefabWithCoroutine()
     {
+        yield return new WaitForSeconds(spawnInterval);
+
+        while (true)
+        {
+            SpawnRandomPrefab();
+
+            float randomDelay = Random.Range(startDelay, 3.0f);
+            yield return new WaitForSeconds(randomDelay);
+        }
+    }
+
+    
+    // Spawn random ball at random x position at top of play area
+    void SpawnRandomPrefab()
+    {
+        int prefabIndex = Random.Range(0, ballPrefabs.Length);
         // Generate random ball index and random spawn position
         Vector3 spawnPos = new Vector3(Random.Range(spawnLimitXLeft, spawnLimitXRight), spawnPosY, 0);
 
         // instantiate ball at random spawn location
-        Instantiate(ballPrefabs[0], spawnPos, ballPrefabs[0].transform.rotation);
+        Instantiate(ballPrefabs[prefabIndex], spawnPos, ballPrefabs[prefabIndex].transform.rotation);
     }
 
 }

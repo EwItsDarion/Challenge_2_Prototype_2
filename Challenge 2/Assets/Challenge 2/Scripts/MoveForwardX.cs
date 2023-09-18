@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+     * Darion Jeffries
+     * MoveForwardX
+     * Challenge2
+     * Allows dog to move forward.
+     */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
