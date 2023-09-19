@@ -1,4 +1,10 @@
-﻿using System.Collections;
+/*
+     * Darion Jeffries
+     * DisplayScore
+     * Prototype 2
+     * Updates score UI
+     */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;

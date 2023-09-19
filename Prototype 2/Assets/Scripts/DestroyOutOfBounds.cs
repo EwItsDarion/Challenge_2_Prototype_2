@@ -1,4 +1,10 @@
-﻿using System.Collections;
+/*
+     * Darion Jeffries
+     * DestroyOutOfBounds
+     * Prototype 2
+     * Destroys objects when they are out of bounds.
+     */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

@@ -1,4 +1,10 @@
-﻿using System.Collections;
+/*
+     * Darion Jeffries
+     * PlayerMovement
+     * Prototype 2
+     * Adds movement to player. horizontal direction
+     */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
