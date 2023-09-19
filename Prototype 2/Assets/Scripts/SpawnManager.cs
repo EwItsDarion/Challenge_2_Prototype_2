@@ -1,4 +1,10 @@
-﻿using System.Collections;
+/*
+     * Darion Jeffries
+     * SpawnManager
+     * Prototype 2
+     * Spawns prefabs within time range and within parameters
+     */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
