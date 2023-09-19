@@ -1,4 +1,10 @@
-﻿using System.Collections;
+/*
+     * Darion Jeffries
+     * ShootPrefab
+     * Prototype 2
+     * Creates objects to shoot when spacebar is pressed.
+     */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
