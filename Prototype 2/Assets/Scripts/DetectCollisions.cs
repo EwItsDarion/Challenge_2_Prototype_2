@@ -1,4 +1,10 @@
-﻿using System.Collections;
+/*
+     * Darion Jeffries
+     * DetectCollisions
+     * Prototype 2
+     * Detects collisions, adds to score if collide
+     */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
